@@ -1,0 +1,16 @@
+logs
+target
+.idea
+node_modules
+/.idea
+/.idea_modules
+/.classpath
+/.project
+/.settings
+/.node_modules
+/.mvn
+/RUNNING_PID
+*.swp
+*.swo
+*.iml
+*.js.map

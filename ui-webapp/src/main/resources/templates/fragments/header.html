@@ -1,0 +1,18 @@
+<html xmlns:th="http://www.thymeleaf.org">
+    <head th:fragment="common_header(title,links)">
+
+        <title th:replace="${title}">Title</title>
+
+        <!-- Common styles and scripts you want on all pages -->
+        <link rel="stylesheet" type="text/css" media="all" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}">
+        <link rel="stylesheet" type="text/css" media="all" th:href="@{/webjars/font-awesome/5.1.0/css/fontawesome.css}">
+        <link rel="stylesheet" type="text/css" media="all" th:href="@{/webjars/font-awesome/5.1.0/css/all.css}">
+        <link rel="shortcut icon" th:href="@{/static/images/favicon.ico}">
+        <!-- Example if you want a script here -->
+        <!--/* <script type="text/javascript" th:src="@{/sh/scripts/codebase.js}"></script> */-->
+
+        <!--/* Per-page placeholder for additional links */-->
+        <th:block th:replace="${links}" />
+
+    </head>
+</html>

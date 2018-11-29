@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: common_header(~{::title},~{::link})">
+
+    <title>Test Page - Main</title>
+
+    <link rel="stylesheet" th:href="@{/styles/main.css}"/>
+
+</head>
+<body>
+    <div th:replace="fragments/navbar :: navbar">
+    </div>
+
+    <div id="root"></div>
+
+    <main role="main" class="container">
+        <div class="jumbotron">
+            <h1>Hello World</h1>
+            <p class="lead">Example Page</p>
+            <a class="btn btn-lg btn-primary" href="../../components/navbar/" role="button">Get Started</a>
+        </div>
+        <div class="container">
+            <table class="table">
+                <tr>
+                    <th scope="col">User</th>
+                    <th scope="col">Name</th>
+                </tr>
+
+            </table>
+        </div>
+    </main>
+
+
+    <th:block th:insert="fragments/scriptLinks :: common_scripts" />
+
+
+</body>
+</html>

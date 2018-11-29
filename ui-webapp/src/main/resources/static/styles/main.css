@@ -1,0 +1,29 @@
+
+
+body {
+  min-height: 75rem;
+  padding-top: 4.5rem;
+}
+
+.navbar{
+   border:.5px solid #ececec;
+}
+
+.bd-example-container-sidebar {
+    float: right;
+    width: 4rem;
+    height: 8rem;
+    background-color: #80bdff;
+    border-radius: .25rem;
+
+}
+
+.bd-example-container-body {
+    height: 8rem;
+    margin-right: 4.5rem;
+    border-radius: .25rem;
+}
+.bd-example-container-fluid {
+    max-width: none;
+    padding-bottom: .25rem;
+}
